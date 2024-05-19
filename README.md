@@ -19,7 +19,8 @@ INSERT INTO dosen (kd_ds, nama) VALUES
 ```
 ![Screenshot 1](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/1c7e720e-6bca-42a1-b411-13eec4fbd62e)
 
-***Output :***
+**Output :**
+
 ![Screenshot 1 1](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/6a5ad7aa-a85b-4abd-8bb4-47e0ad6f2f94)
 
 
@@ -27,7 +28,8 @@ INSERT INTO dosen (kd_ds, nama) VALUES
 ```
 DELETE FROM dosen WHERE kd_ds = 'DS005';
 ```
-***Output :***
+**Output :**
+
 ![Screenshot 2](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/3f95fe93-684a-4641-974d-de1f75f99bfe)
 
 3. Ubah mode menjadi **ON UPDATE CASCADE ON DELETE RESTRICT** 
@@ -43,7 +45,8 @@ REFERENCES dosen (kd_ds)
 ON UPDATE CASCADE
 ON DELETE RESTRICT;
 ```
-***Output :***
+**Output :**
+
 ![Screenshot 3](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/5d59ca3e-e35c-4943-9b9f-4604a483f52b)
 
 4. Lakukan perubahan data pada tabel dosen (kd_ds)
@@ -56,7 +59,8 @@ Perintah di atas akan mengubah nilai kolom `"kd_ds" "NANDA" menjadi "DS005" pada
 
 Pastikan untuk menjalankan perintah dengan hati-hati dan memastikan bahwa perubahan data yang Anda lakukan sesuai dengan kebutuhan dan kebijakan yang berlaku dalam basis data Anda.
 
-***Output :***
+**Output :**
+
 ![Screenshot 4](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/3d44b060-41ab-48b4-a046-19403d11f9ea)
 
 5. Lakukan penghapusan data pada tabel dosen
@@ -66,7 +70,8 @@ Untuk menghapus data dari tabel "dosen" dengan kondisi "kd_ds = 'DS006'", Anda d
 DELETE FROM Dosen WHERE kd_ds = 'DS006';
 ```
 
-***Output :***
+**Output :**
+
 ![Screenshot 5](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/a2aa5599-6315-40e2-8c9f-d7f81924b2c6)
 
 6. Ubah mode menjadi **ON UPDATE CASCADE ON DELETE SET NULL**
@@ -81,7 +86,8 @@ FOREIGN KEY (kd_ds)
 REFERENCES dosen (kd_ds)
 ON DELETE SET NULL;
 ```
-***Output :***
+**Output :**
+
 ![Screenshot 6](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/8380a5bb-3111-4b4e-afb1-c51a9af82df5)
 
 Dengan perubahan di atas, ketika Anda menghapus record dari tabel "dosen" yang memiliki referensi di tabel "mahasiswa", nilai kolom "kd_ds" dalam tabel "mahasiswa" yang mengacu pada record yang dihapus akan diatur menjadi NULL.
@@ -92,7 +98,8 @@ Setelah menjalankan perintah di atas, Anda dapat kembali mencoba menghapus recor
 ```
 DELETE FROM dosen WHERE kd_ds = 'DS003';
 ```
-***0utput :***
+**0utput :**
+
 ![Screenshot 7](https://github.com/anandarahmadani/praktikum3-mysql/assets/147919907/c8d0cbf9-dce7-46bb-aa19-9d2ee809e464)
 
 Perintah ini akan menghapus record dengan nilai "DS003" dari tabel "dosen", dan karena menggunakan opsi ON DELETE SET NULL, nilai kolom "kd_ds" dalam tabel "mahasiswa" yang mengacu pada record yang dihapus akan diatur menjadi NULL.
