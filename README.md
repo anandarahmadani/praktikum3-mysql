@@ -175,6 +175,7 @@ DELETE FROM dosen WHERE nim = 'DS003';
 
 <img src=https://pngimg.com/uploads/google_drive/google_drive_PNG9.png width="110px" >
 
-- [Link Laporan Praktikum](https://bit.ly/3onAF8v)
+- [Link Laporan Praktim] 
+https://drive.google.com/file/d/1kP9NwseJ5DD5GblYPYK2jAbirhNMIwl5/view?usp=drive_link
 
 #TERIMAKASIH
